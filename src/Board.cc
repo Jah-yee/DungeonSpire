@@ -721,7 +721,7 @@ std::string Board::seeDiaHelp(Direction dir) {
     auto tile=getTile(pos);
     auto tileType=tile->getType();
     if(TypeCategories::isPotion(tileType))  dialog+= " and sees an unknown potion";
-    else if (TypeCategories::isGold(tileType)) dialog+=  " and sees an unknow gold";
+    else if (TypeCategories::isGold(tileType)) dialog+=  " and sees an unknown gold";
     else dialog+=  "";
     return dialog;
 }
